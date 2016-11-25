@@ -1,5 +1,28 @@
-" Settings {{{
-set nocompatible
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" To ignore plugin indent changes, instead use:
+filetype plugin on
+
+"Settings {{{
 set relativenumber                 " By default, show line numbers relative to the cursor
 set encoding=utf-8                 " UTF-8
 set tabstop=2                      " Tab Width
@@ -42,7 +65,7 @@ set nobackup                       " Prevents creating <filename>~ files
 set nowritebackup                  " Prevents creating <filename>~ files
 set nolazyredraw                   " Avoids redrawing when running macros
 " }}}
- :vsp
+
 " Keyboard Mappings {{{
 " Leaders {{{
 let mapleader = "\<Space>"
