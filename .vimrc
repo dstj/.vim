@@ -15,6 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'christianrondeau/vim-loggly-search'
 let g:loggly_account = "mediaclip"
 "Loggly plugins {{{
