@@ -1,22 +1,11 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'christianrondeau/vim-loggly-search'
+call plug#begin()
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'christianrondeau/vim-loggly-search'
 let g:loggly_account = "mediaclip"
 "Loggly plugins {{{
 let g:loggly_curl_auth = "--netrc-file C:/Users/dominic.st-jacques/.netrc"
@@ -26,8 +15,8 @@ function! Loggly_filter_mediaclip()
 endfunction
 " }}}
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
+" All of your Plugs must be added before the following line
+call plug#end()
 filetype plugin indent on    " required
 
 " To ignore plugin indent changes, instead use:
