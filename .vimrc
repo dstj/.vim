@@ -6,6 +6,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'christianrondeau/vim-loggly-search'
+if filereadable(expand("~/.vimrc_plugins"))
+  source ~/.vimrc_plugins
+endif
+
 let g:loggly_account = "mediaclip"
 "Loggly plugins {{{
 let g:loggly_curl_auth = "--netrc-file C:/Users/dominic.st-jacques/.netrc"
