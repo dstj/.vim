@@ -46,6 +46,7 @@ set wildmenu                       " Shows a menu when using Tab in command path
 " Set listchars to '›', '·', '↲'
 " let &listchars="tab:\u203a\ ,trail:\u00b7,extends:\u21b2"
 " }}}
+set clipboard=unnamed,unnamedplus  " Use system register
 
 " Terminal Settings {{{
 if has("gui_running") 
