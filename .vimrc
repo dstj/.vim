@@ -6,6 +6,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'christianrondeau/vim-loggly-search'
+Plug 'christianrondeau/vim-base64'
 if filereadable(expand("~/.vimrc_plugins"))
   source ~/.vimrc_plugins
 endif
@@ -39,6 +40,7 @@ set cursorline                     " Highlight the current line
 set showmode                       " Shows when in paste mode
 set showmatch                      " Highlight matching braces
 set wildmenu                       " Shows a menu when using Tab in command paths
+set nowrap                         " No line-wrapping
 
 " set list                           " Show whitespace
 " Set showbreak to '↪ '
